@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idol Airlines</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+                body {
+            background-color: #000000;
+            cursor: none; /* Hide default cursor */
+        }
+    
+        /* Custom Cursor */
+    .cursor {
+    position: fixed;  /* Fixed to stay above everything */
+    width: 15px;
+    height: 15px;
+    background: rgb(160, 153, 255);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s linear;
+    mix-blend-mode: difference;
+    z-index: 9999; /* Ensures it stays on top */
+}
 
+/* Navbar */
+.navbar {
+    background-color: rgb(33, 33, 33);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Keeps navbar above other elements */
+}
+
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar-brand .navbar-brand:hover{
+            color:rgb(160, 153, 255) !important;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+    
+        .navbar-toggler {
+            border: none;
+        }
+    
+        /* Navbar Links */
+        .navbar-nav .nav-link {
+            color: rgb(234, 243, 255) !important;
+            font-weight: 200;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar-nav .nav-link:active {
+            color: rgb(255, 255, 255) !important;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+    
+        /* Purple Hover Effect */
+        .navbar-nav .nav-link:hover {
+            color: rgb(160, 153, 255) !important;
+        }
+    
+        /* Hamburger Menu Icon */
+        .navbar-toggler-icon {
+            filter: invert(1); /* Makes it white */
+        }
+
+/* Reduce margin around the text */
+.hero h1 {
+    margin: 0; /* Remove unnecessary margins */
+    padding: 5px 0; /* Adjust padding if needed */
+    font-size: 1rem; /* Adjust font size if necessary */
+}
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            font-weight: bold;
+            
+        }
+
+        /* Responsive Image */
+        .img-container img {
+            width: 100%;
+            max-width: 1500px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .hero {
+                height: 200px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+        <div class="cursor" id="cursor"></div>
+    
+        <script>
+            const cursor = document.getElementById("cursor");
+    
+            document.addEventListener("mousemove", (e) => {
+                cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+            });
+        </script>
+    
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">MAHATI MESTRI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" >
+                        <li class="nav-item" style="color: white;"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="work.html" style="font-weight: 400;"><b>Work</b></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Heading an Close -->
+    <div style="display: flex;align-items: center;">
+        <div style="color: white;width: 90%;text-align: center;">
+            Flo App Gamification
+        </div>
+        <div><a href="work.html"> 
+            <img src="imagesmedia/Close.png" alt="Close Button">
+        </a>
+        </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="container text-center">
+        <div class="img-container">
+            <img src="imagesmedia/idolair.png" alt="Idol Air">
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
