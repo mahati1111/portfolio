@@ -11,7 +11,7 @@
             font-family: 'Arial', sans-serif;
             text-align: center;
             cursor: none;
-            
+;
         }
 
         .cursor {
@@ -65,7 +65,7 @@
 
         .gradient-text {
             font-size: 5rem;
-            background: linear-gradient(90deg, #3c00ff, #a000b1, #ff00c3);
+            background: linear-gradient(90deg, #8d8dff, #d079ff, #ff89e6);
             background-size: 400% 400%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -186,6 +186,52 @@
             filter: invert(1); /* Makes it white */
         }
 
+        /* Project Cards */
+        .project-card {
+            border: none;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+    
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+    
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+    
+        .card-body {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            height: 50px;
+        }
+    
+
+
+        .card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+.card-footer .btn {
+  width: 100%;
+  font-weight: 500;
+}
+
+
     </style>
 </head>
 <body>
@@ -203,7 +249,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="work.html"><b>Work</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="work.html"><b>Projects</b></a></li>
                 </ul>
             </div>
         </div>
@@ -211,8 +257,9 @@
 
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <div>
+          
             <h1>Hello, I'm <span class="gradient-text"><br>Mahati Mestri</span></h1>
-            <h2 style="color: white;font-size: medium;font-weight: 200;">A UI UX Designer, Designing experiences that matter.</h2>
+            <h2 style="color: white;font-size: medium;font-weight: 200;">A UI UX Student</h2>
             <br>
             <a href="work.html" class="CTA-btn">View Work</a>
             <br><br><br>
@@ -220,6 +267,61 @@
             <h6 style="color: white;font-size: medium;font-weight: 200;">UI UX Design  •  Game Design  •  Space Design  •  Graphic Design</h6>
         </div>
     </div>
+
+    <!-- Work Section -->
+    <div class="container mt-5">
+        <h4 class="fw-bold" style="color: whitesmoke;">Recent Works :</h4>
+        <div class="row mt-4 g-4">
+            <!-- Project Cards -->
+             <!-- LUNA Card -->
+            <div class="col-md-4 col-sm-6">
+                <a href="luna.html" style="text-decoration: none; color: inherit;">
+                    <div class="card project-card">
+                        <img src="imagesmedia/lunacard.png" style="border-radius: 10px;" alt="Luna Card Game">
+                        <div class="card-body">
+                            <p class="card-text">Luna Card Game</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+             <!-- BITEBLISS Card -->
+             <div class="col-md-4 col-sm-6">
+                <a href="https://mahati1111.github.io/" style="text-decoration: none; color: inherit;">
+                    <div class="card project-card">
+                        <img src="imagesmedia/biteblisscard.png" style="border-radius: 10px;" alt="Bite Bliss Website">
+                        <div class="card-body">
+                            <p class="card-text">Bite Bliss Website</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+               <!-- Plantmate App -->
+            <div class="col-md-4 col-sm-6">
+                <a href="plant.html" style="text-decoration: none; color: inherit;">
+                    <div class="card project-card">
+                        <img src="imagesmedia/PlantmateApp.png" style="border-radius: 10px;" alt="PlantmateApp Ui Design">
+                        <div class="card-body">
+                            <p class="card-text">Plantmate App</p>
+                            <button style="border-radius: 100%; font-size: smaller; color: #ffffff;background-color: #0082e0;">View Case Study</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Tools I use -->
+    <div>
+        <h4 class="fw-bold" style="color: whitesmoke;">Tools I Use</h4>
+        <img >
+    </div>
+
+
+  </div>
+</div>
 
     <div class="doodle-container">
         <img src="imagesmedia/flower-doodle-outline.png" class="doodle doodle1">
@@ -251,6 +353,8 @@
 
 </body>
 </html>
+
+
 
 
 
